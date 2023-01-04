@@ -69,3 +69,9 @@ div.right .second {
     display: flex;
     align-items: center;
 }
+
+/*-------------------------------*/
+.header {
+    width: 100%;
+    background-color: #A01775;
+}
