@@ -160,9 +160,60 @@ div.right .second {
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 1s;
+    transition: .3s;
 }
 
 .manual-btn:not(:last-child) {
     margin-right: 40px;
 }
+
+.manual-btn:hover {
+    background-color: white;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -100vw;
+}
+
+.navigation-auto div {
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 100vw;
+    margin-top: 440px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #ffffff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
