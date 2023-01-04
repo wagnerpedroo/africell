@@ -4,28 +4,68 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('../font/Nexa\ Regular.otf') format('opentype');
+}
+
+.material-symbols-outlined {
+    font-weight: 200;
     color: white;
 }
 
 body {
-    background-color: rgb(83, 65, 42);
-    font-size: 1em;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    font-family: 'Nexa';
 }
 
-nav:not(.menu) {
-    background-color: #A01775;
+.navbar {
+    position: relative;
+    padding: 0 85px 0 85px;
     width: 100%;
-    height: 1.875em;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #881E66;
 }
 
-nav ul.leftside {
-    width: 50%;
+div.navbar ul.left {
+    width: 385px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
-    font-size: 12px;
+}
+
+ul.left li a {
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul.left li a:hover, .first:not(.material-symbols-outlined):hover, .second:hover:not(.material-symbols-outlined) {
+    text-shadow: 0 0 2px white;
+}
+
+div.navbar div.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 290px;
+}
+
+div.right .first {
+    display: flex;
+    align-items: center;
+}
+
+div.right .second {
+    display: flex;
+    align-items: center;
 }
