@@ -140,6 +140,7 @@ div.right .second {
 .slide {
     width: 100%;
     position: relative;
+    transition: 2s;
 }
 
 .slide img {
@@ -179,8 +180,16 @@ div.right .second {
     margin-left: -100vw;
 }
 
+#radio3:checked ~ .first {
+    margin-left: -100vw;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -100vw;
+}
+
 .navigation-auto div {
-    border: 2px solid #20a6ff;
+    border: 2px solid #fff;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -207,7 +216,13 @@ div.right .second {
     background-color: #ffffff;
 }
 
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #ffffff;
+}
 
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #ffffff;
+}
 
 
 
