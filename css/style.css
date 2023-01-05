@@ -224,6 +224,16 @@ div.right .second {
     background-color: #ffffff;
 }
 
+.texto > marquee > p {
+    color: white;
+    font-weight: bold;
+}
+
+.texto > marquee {
+    background-color: #F2841E;
+    padding: 10px;
+}
+
 
 
 
